@@ -1,0 +1,32 @@
+caminho = /NJOY21/bin/ic_testsJoao/2He3_testes/testeGeradoPrograma
+material = '2He3'
+tlabel = 'pendf tape for 2He3 from endf/b tape 511'
+ncards = 3
+err = .005
+cards = '2-He-3 from tape 511'
+'processed by the njoy nuclear data processing system'
+'see original endf/b-v tape for details of evaluation'
+ntemp2 = 1
+temp2 = 296
+errthn = .005
+ign = 1
+igg = 0
+itw = 3
+lord = 3
+ntemp = 1
+nsigz = 1
+iprint = 1
+sigz = 1.e+10
+title = '2-He-3'
+temp = 296
+ngn = 47
+egn = 1.00e-20 1.00e-01 4.14e-01 8.76e-01 1.86e+00 5.04e+00 1.07e+01 3.73e+01 
+1.01e+02 2.14e+02 4.54e+02 1.58e+03 3.35e+03 7.10e+03 1.50e+04 2.19e+04 
+2.42e+04 2.61e+04 3.18e+04 4.09e+04 6.74e+04 1.11e+05 1.83e+05 2.97e+05 
+3.69e+05 4.98e+05 6.08e+05 7.43e+05 8.42e+05 1.00e+06 1.35e+06 1.65e+06 
+1.92e+06 2.23e+06 2.35e+06 2.37e+06 2.47e+06 2.73e+06 3.01e+06 3.68e+06 
+4.97e+06 6.07e+06 7.41e+06 8.61e+06 1.00e+07 1.22e+07 1.42e+07 1.73e+07
+mfd = 3 3 6 
+mtd = 1 2 2
+mtname = 'total' 'elastic' 'elastic'
+matd = 0
