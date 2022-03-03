@@ -1,0 +1,15 @@
+{
+    "njoy" :  "/NJOY21/bin/", 
+
+    "teste_1" :
+    {
+        "caminho":"/NJOY21/bin/ic_testsJoao/testeConcretoAutomatizado",
+        "output": "outputConcretoAutomatizado1",
+        "arquivoEntrada" : "testeAki.txt",
+        "arquivoSaida" : "inputGeradoMAIN.txt",
+        "padrao" : "inputPraTestarGAMIRN.txt",
+        "ingredientes" : "densidade_materiais.txt",
+        "elementos" : "peso_atômico.txt"
+    }
+
+}

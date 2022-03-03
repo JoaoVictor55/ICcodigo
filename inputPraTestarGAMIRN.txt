@@ -1,0 +1,16 @@
+reconr
+nout npend
+tlabel 
+matb ncards
+err
+cards
+VOLTE 3
+gaminr
+nout npend ngout1 ngout2
+matb igg iwt lord iprint
+title
+ngg
+egg
+mfd mtd mtname
+VOLTE 13 
+STOP

@@ -1,0 +1,24 @@
+reconr
+nout npend
+tlabel 
+matb ncards
+err
+cards
+VOLTE 3
+broadr
+nout npend nout1
+matb ntemp2
+errthn
+temp2
+matb
+groupr
+nout nout1 ngout1 ngout2
+matb ign igg iwt lord ntemp nsigz iprint
+title
+temp2
+sigz
+ngn
+egn
+mfd mtd mtname
+VOLTE 21
+STOP

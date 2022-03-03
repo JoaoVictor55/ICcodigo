@@ -1,0 +1,13 @@
+Nesta versão, o programa consegue lidar com múltiplos materiais, baixar tapes da internet usando um robô e calcular a seção macroscópica total utilizando a saída do NJOY, escrevendo-a em um txt.
+Podem ser utilizadas dois padrões; um para o módulo GAMIRN (inputPraTestarGAMIRN) e outro para GROUPR (inputPraTestar). É usado um arquivo json para especificar os nomes dos arquivos necessários.
+
+Para rodar, execute app.py
+
+Requisitos:
+
+python 3.8.10 ou superior
+Ubuntu ou WSL
+NJOY21
+biblioteca numpy
+biblioteca selenium
+navegador FireFox
