@@ -1,0 +1,81 @@
+1646330839768	geckodriver	INFO	Listening on 127.0.0.1:33523
+1646331283011	geckodriver	INFO	Listening on 127.0.0.1:59063
+1646331299871	geckodriver	INFO	Listening on 127.0.0.1:52961
+1646331327085	geckodriver	INFO	Listening on 127.0.0.1:41313
+1646331364793	geckodriver	INFO	Listening on 127.0.0.1:43597
+1646331365250	geckodriver	INFO	Listening on 127.0.0.1:60473
+1646331432469	geckodriver	INFO	Listening on 127.0.0.1:50785
+1646331432905	geckodriver	INFO	Listening on 127.0.0.1:55841
+1646331578942	geckodriver	INFO	Listening on 127.0.0.1:50541
+1646331579436	geckodriver	INFO	Listening on 127.0.0.1:55793
+1646331756739	geckodriver	INFO	Listening on 127.0.0.1:65308
+1646331759699	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "65309" "-no-remote" "-profile" "C:\\Users\\Win10\\AppData\\Local\\Temp\\rust_mozprofile0kNDIp"
+*** You are running in headless mode.
+1646331761123	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Win10\\AppData\\Local\\Temp\\rust_mozprofile0kNDIp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65309/devtools/browser/262b87db-4923-4384-abf4-f43b6546181a
+1646331770024	Marionette	INFO	Listening on port 65314
+1646331770393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www-nds.iaea.org"
+JavaScript warning: https://www-nds.iaea.org/exfor/x4js/e4search.js, line 17: unreachable code after return statement
+JavaScript warning: https://www-nds.iaea.org/exfor/x4js/e4search.js, line 17: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www-nds.iaea.org"
+1646331791300	Marionette	INFO	Stopped listening on port 65314
+1646404993674	geckodriver	INFO	Listening on 127.0.0.1:44241
+1646405589245	geckodriver	INFO	Listening on 127.0.0.1:41129
+1646405673058	geckodriver	INFO	Listening on 127.0.0.1:40759
+1646405690907	geckodriver	INFO	Listening on 127.0.0.1:46483
+1646406238551	geckodriver	INFO	Listening on 127.0.0.1:58794
+1646406241631	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "58795" "-no-remote" "-profile" "C:\\Users\\Win10\\AppData\\Local\\Temp\\rust_mozprofileJIDhXA"
+*** You are running in headless mode.
+1646406242955	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Win10\\AppData\\Local\\Temp\\rust_mozprofileJIDhXA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58795/devtools/browser/91d47078-5410-423f-a53d-7565e9852d3c
+1646406245935	Marionette	INFO	Listening on port 58801
+1646406246125	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www-nds.iaea.org"
+JavaScript warning: https://www-nds.iaea.org/exfor/x4js/e4search.js, line 17: unreachable code after return statement
+JavaScript warning: https://www-nds.iaea.org/exfor/x4js/e4search.js, line 17: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www-nds.iaea.org"
+1646406276770	Marionette	INFO	Stopped listening on port 58801
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1646406446964	geckodriver	INFO	Listening on 127.0.0.1:58938
+1646406449943	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "58939" "-no-remote" "-profile" "C:\\Users\\Win10\\AppData\\Local\\Temp\\rust_mozprofile4cS141"
+*** You are running in headless mode.
+1646406450681	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Win10\\AppData\\Local\\Temp\\rust_mozprofile4cS141\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58939/devtools/browser/e10dd37c-b034-4edd-9aa6-36852c794d0b
+1646406453905	Marionette	INFO	Listening on port 58945
+1646406454218	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www-nds.iaea.org"
+JavaScript warning: https://www-nds.iaea.org/exfor/x4js/e4search.js, line 17: unreachable code after return statement
+JavaScript warning: https://www-nds.iaea.org/exfor/x4js/e4search.js, line 17: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www-nds.iaea.org"
+1646406460736	Marionette	INFO	Stopped listening on port 58945
+1646416298554	geckodriver	INFO	Listening on 127.0.0.1:42821
+1646416298927	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "34857" "-no-remote" "-profile" "/tmp/rust_mozprofilepOaLMM"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: No GPUs detected via PCI
+1646416299417	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepOaLMM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:34857/devtools/browser/e7dce31e-4980-49a0-b622-9ec7b71c716e
+1646416305846	Marionette	INFO	Listening on port 42051
+1646416306197	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www-nds.iaea.org"
+JavaScript warning: https://www-nds.iaea.org/exfor/x4js/e4search.js, line 17: unreachable code after return statement
+JavaScript warning: https://www-nds.iaea.org/exfor/x4js/e4search.js, line 17: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www-nds.iaea.org"
+1646416341247	Marionette	INFO	Stopped listening on port 42051
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

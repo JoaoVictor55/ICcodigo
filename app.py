@@ -1,11 +1,10 @@
-from Parametros import Parametros, ParametrosAdmin
+from parametros.Parametros import Parametros, ParametrosAdmin
 import os
-from entrada import Entrada
-import tape
-import webScraping
+from entrada.entrada import Entrada
+from tapes.tape import Tape
+from tapes import webScraping
 import json
-from  macroCalculador import MacroSeccao
-from time import sleep
+from  macroCalculador.macroCalculador import MacroSeccao
 
 def rodar(arquivoEntrada, caminho, tapes, outputNome, njoy):
 
@@ -22,6 +21,7 @@ def rodar(arquivoEntrada, caminho, tapes, outputNome, njoy):
     os.system("sudo mkdir "+caminho)
     
     comando = "sudo cp ./" + arquivoEntrada + " " + caminho
+   
     os.system(comando)
 
     comando = "sudo cp "+njoyloco+ ' ' + caminho
@@ -30,11 +30,7 @@ def rodar(arquivoEntrada, caminho, tapes, outputNome, njoy):
     for tape in tapes:
         os.system("sudo mv ./"+tape+" "+caminho)
 
-  #  pwd = os.getcwd()
-
     os.chdir(caminho)
-
-    #outputNome = outputNome[0].replace("'","")
 
     try:
         os.system("sudo rm "+ outputNome)
@@ -43,26 +39,12 @@ def rodar(arquivoEntrada, caminho, tapes, outputNome, njoy):
 
     os.system(comando)
 
-    sleep(2)
+def macro_seccao(outputNome, ingredientes,ordem,elementos,pwd):
 
-    #comando = 'sudo mv ./' + outputNome[0] + " " + pwd
-    #os.system(comando)
+    ordem = [ordem[chave] for chave in ordem] #Pega a ordem em que os elementos aparecerão na saída.
 
-    #sleep(2)
-
-    #os.chdir(pwd)
-
-
-def macro_seccao(outputNome, ingredientes, elementos,pwd):
-    
-    atual = os.getcwd()
-
-    #comando = "sudo cp "+pwd+"/"+ingredientes+ " "+atual
-    #comando2 = "sudo cp "+pwd+"/"+elementos+ " "+atual
-    #os.system(comando)
-    #os.system(comando2)
-
-    macroSec = MacroSeccao(outputNome, material=pwd+"/"+ingredientes, elementos=pwd+"/"+elementos)
+    macroSec = MacroSeccao(outputNome, material=pwd+"/"+ingredientes, elementos=pwd+"/"+elementos,
+    ordemElementosOutput=ordem)
 
     macroSec.calcularMacroscopicaTotal()
 
@@ -72,12 +54,16 @@ def macro_seccao(outputNome, ingredientes, elementos,pwd):
 
         indice = 0
         for elemento in result:
+            etiqueta = ordem.pop(0) #Pega o nome dos materiáis pra identificá-los.
+            etiqueta+="\n"
             for a in elemento:
-
-                string = '['+str(indice)+']'+str(a)+'\n'
+            
+                string = etiqueta+'['+str(indice)+']'+str(a)+'\n'
 
                 macroSAIDA.write(string)
                 indice += 1
+                etiqueta = ''
+
 
             macroSAIDA.write("*************************************************************\n\n\n")
             indice = 0
@@ -90,7 +76,7 @@ def renomear(materiais_code):
     for chave in materiais_code:
 
         nome = 'tape'+str(contador)
-        os.system('cp '+materiais_code[chave]+'.txt'+' '+nome)
+        os.system('cp endf_files/'+materiais_code[chave]+'.txt'+' '+nome)
         lista_tapes.append(nome)
         contador += 1
 
@@ -104,7 +90,7 @@ def main(arquivoEntrada = "testeAki.txt", arquivoSaida = 'inputGeradoMAIN.txt', 
 
     materiais = webScraping.WebScraping(entradaUser['material'])
 
-    tape20 = tape.Tape(materiais)
+    tape20 = Tape(materiais)
     tape20.procurarTAPE()
 
     parametro = Parametros()
@@ -119,9 +105,7 @@ def main(arquivoEntrada = "testeAki.txt", arquivoSaida = 'inputGeradoMAIN.txt', 
     entrada = ParametrosAdmin(padrao,parametros,arquivoSaida)
     entrada.preencheInput()
 
-#entradaUser['caminho']
-#entradaUser['output']
-    return arquivoSaida, renomear(mats) 
+    return arquivoSaida, renomear(mats), mats
 
 if __name__ == "__main__":
 
@@ -152,14 +136,14 @@ if __name__ == "__main__":
         caminho = configuracao[elemento]['caminho']
         outputNome = configuracao[elemento]['output']
 
-        entrada, tapes = main(arquivoEntrada, arquivoSaida,padrão)
+        entrada, tapes, materiais = main(arquivoEntrada, arquivoSaida,padrão)
         rodar(entrada,caminho,tapes, outputNome,njoy)
 
         try:
             ingredientes = configuracao[elemento]['ingredientes']
             elementos = configuracao[elemento]['elementos']
 
-            macro_seccao(outputNome=outputNome, ingredientes=ingredientes, elementos=elementos,pwd=pwd)
+            macro_seccao(outputNome=outputNome, ingredientes=ingredientes,ordem=materiais,elementos=elementos,pwd=pwd)
         except KeyError: pass
 
 

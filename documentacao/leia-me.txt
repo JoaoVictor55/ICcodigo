@@ -1,0 +1,27 @@
+Nesta versão, o programa consegue lidar com múltiplos materiais, baixar tapes da internet usando um robô e calcular a seção macroscópica total utilizando a saída do NJOY, escrevendo-a em um txt.
+Podem ser utilizadas dois padrões; um para o módulo GAMIRN (inputPraTestarGAMIRN) e outro para GROUPR (inputPraTestar). É usado um arquivo json para especificar os nomes dos arquivos necessários.
+
+Para rodar:
+
+preencha a entrada com as variáveis e seus respectivos valores. Salve em um txt e indique seu nome no arquivo de configuração.
+no arquivo de configuração .json, preecha os campos:
+
+njoy, com o local de instalação do NJOY21;
+caminho, pasta onde será feito os testes;
+output, o nome do arquivo em que o NJOY escreverá a saída;
+arquivoSaida, o nome do arquivo de input para o NJOY que será gerado;
+padrao, o padrão de input que o programa deve usar. E, opcionalmente;
+ingredientes; a lista de materiais usadas na mistura com sua densidade e fração de peso;
+elementos; o arquivo com contém o peso atômico dos elementos.
+
+execute app.py
+
+Requisitos:
+
+python 3.8.10 ou superior
+Ubuntu ou WSL2
+NJOY21
+biblioteca numpy
+biblioteca selenium
+navegador FireFox (no caso do WSL2, o FireFox precisa estar instalado no subsistema)
+geckdriver para linux (já incluso a versão v0.30.0; confira se é a mais atual)
